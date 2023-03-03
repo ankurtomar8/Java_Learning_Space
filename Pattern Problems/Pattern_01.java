@@ -1,34 +1,29 @@
-// WAP to print following pattern problem  01
-//  *  *  *  *  * 
-//  *  *  *  *  * 
-//  *  *  *  *  * 
-//  *  *  *  *  * 
-//  *  *  *  *  * 
+ // WAP to print following Pattern
+ //  *  *  *  *  *  * 
+ //  *  *  *  *  *  * 
+ //  *  *  *  *  *  * 
+ //  *  *  *  *  *  * 
+ //  *  *  *  *  *  * 
+ //  *  *  *  *  *  * 
+ //   n = 5
+
+
 import java.util.*;
+class Main{
+public static void main(String args[])
+{
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    
+    for (int row = 1 ; row <= n ; row++){  // row changer
+        for(int col = 1 ; col <=n ; col++){ // column changer
+            System.out.print(" * ");
 
-class Main {
-	public static void main(String args[]) {
-	
-	Scanner sc = new Scanner(System.in);
-	int s = sc.nextInt();
-   	
-	   for (int row = 1 ; row <= s ; row++){
-		   
-		      for (int col = 1  ; col <= s ; col++)
-			  {
-		   System.out.print(" * ");
-		   
-		   for (int space = 1  ; space <= row ; space++)
-		   {
-		   System.out.print("");
-	 	   }
-		   
-	   }
-	   
-	   System.out.println(); // row
-	   }
-	    
-	
-	}
+    
+        }
+        System.out.println("");
+    }
+
+
 }
-
+}
